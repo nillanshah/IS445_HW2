@@ -1,12 +1,67 @@
-header {
-  background-color: burlywood;
+html {
+  background-color: rgb(236, 236, 236);
 }
 
-h1{
-  font-size: 24px;
-  color: red;
+.page-title {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  height: 40px;
 }
-a{
-  text-decoration: none;
-  color: black;
+
+a {
+ text-decoration: none;
+ color: black; 
+}
+
+.trip-text {
+  background-color: #4ffa3f;
+  padding: 0;
+}
+
+.trip-text p {
+  background-color: white;
+  margin: 0;
+  display: inline-block;
+  width: 50%;
+}
+.bar {
+  height: 70px;
+}
+
+.feedback{
+  background-color: aqua;
+  color: blue;
+  text-align: center;
+
+}
+
+img{
+  height: 70%;
+  width: 60%;
+}
+
+.navigation{
+  text-align: center;
+}
+.navigation li, .navigation a{
+  display: inline-block;
+  width: 70px;
+  background-color: floralwhite;
+  border-width: 3px;
+  border-color: black;
+}
+.review p, .review img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.review img {
+  width: 50%;
+  height: 50%;
 }
