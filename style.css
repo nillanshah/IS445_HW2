@@ -1,5 +1,6 @@
 html {
   background-color: rgb(236, 236, 236);
+  font-family: 'Barlow', sans-serif;
 }
 body {
   margin: 0;
@@ -14,13 +15,15 @@ body {
   text-align: center;
   margin: 0;
   height: 40px;
+  font-size: 16px;
+  font-size: 2rem;
 }
 
 a {
  text-decoration: none;
  color: black; 
 }
-
+/*
 .trip-text {
   background-color: #4ffa3f;
   padding: 0;
@@ -34,13 +37,19 @@ a {
   width: 50%;
   text-align: center;
   color: coral;
+  font-size: 16px;
+  font-size: 1rem;
+}*/
+.trip-text{
+  display: none;
 }
 
 .trip-imgs{
   display: flex;
+  flex-wrap: wrap;
 }
 .trip-imgs img {
-  width: 50%;
+  width: 100%;
   height: 100%;
 } 
 
@@ -56,11 +65,8 @@ a {
   margin: 0;
   bottom: 45px;
   height: 45px;
-}
-
-img{
-  height: 70%;
-  width: 60%;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .navigation{
@@ -71,8 +77,8 @@ img{
   display: inline-block;
   width: 70px;
   background-color: lightcyan;
-
-
+  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .review {
@@ -92,4 +98,40 @@ img{
 .review p {
   width: 400px;
   text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+@media (min-width: 599px){
+  .navigation li, .navigation a{
+    font-size: 1.2rem;
+  }
+  .trip-imgs{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 600px){
+  .trip-imgs img {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+  } 
+
+  
+  .trip-text {
+      background-color: #fa923f;
+      padding: 0;
+      display: flex;
+  }
+
+  .trip-text p {
+    background-color: lightgrey;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    color: coral;
+    font-size: 16px;
+    font-size: 1rem;
+}
 }
